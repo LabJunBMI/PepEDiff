@@ -4,7 +4,13 @@ This is the implementation code for PepEDiff
 
 ## Reproducing Results
 
-### 1. Training
+### 1. Testing Set & TIGIT
+To reproduce the testing results you can download the processed data and model weight directly from:
+[Here](https://zenodo.org/records/19521740)
+  1. Run the sampling script ```python sample_testing.py``` to sample binders from testing set
+  2. Execute all cells in ```sampl_TIGIT.ipynb``` to sample binders for TIGIT
+
+### 2. Training
 To train the model from scratch using the training dataset:
 
 0.  **Download the data:**
@@ -18,10 +24,7 @@ To train the model from scratch using the training dataset:
 3.  **Run the training script:**
     ```python train.py```
 
-### 2. Testing
-To reproduce the testing results using the pretrained model:
-  1. Run the sampling script ```python sample_testing.py``` to sample binders from testing set
-  2. Execute all cells in ```sampl_TIGIT.ipynb``` to sample binders for TIGIT
+
 
 
 ## Acknowledgments
