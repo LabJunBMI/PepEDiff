@@ -1,0 +1,17 @@
+name: PepEDiff
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - pytorch=2.3.0
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+    - torch-geometric==2.6.1
+    - transformers==4.38.2
+    - pytorch-lightning==2.5.5
+    - scikit-learn==1.7.2
